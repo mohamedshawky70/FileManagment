@@ -9,10 +9,10 @@ public class UploadFileValidation:AbstractValidator<UploadFileRequest>
 {
 	public UploadFileValidation()
 	{
-	/*	RuleFor(x => x.File)
+		RuleFor(x => x.File)
 			.Must((request, context) => request.File.Length <= FileSetting.FileMaxSizeInMb)
 			.WithMessage($"Max file size {FileSetting.FileMaxSizeInMb / 1024 / 1024} MB")
-			.When(x => x.File is not null);//علشان متبلعش نل في اللينث*/
+			.When(x => x.File is not null);//علشان متبلعش نل في اللينث
 
 		RuleFor(x => x.File)
 			.Must((request, context) =>
