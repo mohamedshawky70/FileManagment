@@ -2,5 +2,5 @@
 
 public record UploadImageRequest
 (
-	IFormFile Image
+	public IFormFile Image { get;set;}
 );
